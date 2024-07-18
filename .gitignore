@@ -12,3 +12,5 @@ localmake
 *.test-diff
 *.test-tmp
 *.test-out
+*/doc/doxygen/html/*
+*/doc/doxygen/pdf/*

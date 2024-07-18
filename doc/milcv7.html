@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
 <html>
-<!-- Created on November 22, 2015 by texi2html 1.82
+<!-- Created on July 18, 2024 by texi2html 1.82
 texi2html was written by: 
             Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -1047,13 +1047,7 @@ operations.
 	include the &quot;R&quot;, &quot;phi&quot; and hybrid Monte Carlo updating
 	algorithms.  Measurements of a few quantities are included: 
         plaquette, Polyakov loop,
-<!-- MATH
- $<\psi\bar\psi>$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="60" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_1.png"
- ALT="$&lt;\psi\bar\psi&gt;$"></SPAN>
+<p>$&lt;\psi\bar\psi&gt;$</p>
 </p>
 </dd>
 <dt> <strong>ks_imp_rhmc:</strong></dt>
@@ -1072,13 +1066,7 @@ operations.
 </p>
 </dd>
 <dt> <strong>ks_measure:</strong></dt>
-<dd><p>      Calculate <!-- MATH
- $<\psi\bar\psi>$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="60" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_1.png"
- ALT="$&lt;\psi\bar\psi&gt;$"></SPAN>
+<dd><p>      Calculate <p>$&lt;\psi\bar\psi&gt;$</p>
      and a wide variety of quantities used in staggered
      thermodynamics, for the equation of state and quark number
       susceptibilities at zero and nonzero chemical potential
@@ -1962,13 +1950,7 @@ typedef struct {
 </p><table><tr><td>&nbsp;</td><td><pre class="example">  typedef struct { su3_vector d[4]; } wilson_vector;
 </pre></td></tr></table>
 <p>Projections of Wilson vectors
-<!-- MATH
- $(1 \pm \gamma_\mu)\psi$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="72" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_2.png"
- ALT="$(1 \pm \gamma_\mu)\psi$"></SPAN>
+<p>$(1 \pm \gamma_\mu)\psi$</p>
 </p><table><tr><td>&nbsp;</td><td><pre class="example">  typedef struct { su3_vector h[2]; } half_wilson_vector;
 </pre></td></tr></table>
 <p>A definition to be used in the next definition:
@@ -3439,59 +3421,18 @@ maintained by us.
 </p>
 <p>For some unknown reason, lost in the mists of time,
  the MILC code uses the opposite convention for the projectors
-<BR><P></P>
-<DIV ALIGN="CENTER" CLASS="mathdisplay">
-<!-- MATH
- \begin{displaymath}
-S = \sum_x \bar \psi(x) \psi(x) - \kappa(
+<p>$$S = \sum_x \bar \psi(x) \psi(x) - \kappa(
  \sum_\mu \bar \psi(x) (1+\gamma_\mu)U_\mu(x) \psi(x+\mu) +
- \sum_\mu \bar \psi(x+\mu) (1-\gamma_\mu)U_\mu^\dagger(x) \psi(x))
-\end{displaymath}
- -->
-
-<IMG
- WIDTH="572" HEIGHT="46" BORDER="0"
- SRC="milcv7_3.png"
- ALT="\begin{displaymath}S = \sum_x \bar \psi(x) \psi(x) - \kappa(
-\sum_\mu \bar \psi...
-...m_\mu \bar \psi(x+\mu) (1-\gamma_\mu)U_\mu^\dagger(x) \psi(x)) \end{displaymath}">
-</DIV>
-<BR CLEAR="ALL">
-<P></P>
+ \sum_\mu \bar \psi(x+\mu) (1-\gamma_\mu)U_\mu^\dagger(x) \psi(x)) $$</p>
 rather than the more standard convention
-<BR><P></P>
-<DIV ALIGN="CENTER" CLASS="mathdisplay">
-<!-- MATH
- \begin{displaymath}
-S = \sum_x \bar \psi(x) \psi(x) - \kappa(
+<p>$$ S = \sum_x \bar \psi(x) \psi(x) - \kappa(
  \sum_\mu \bar \psi(x) (1-\gamma_\mu)U_\mu(x) \psi(x+\mu) ) +
- \sum_\mu \bar \psi(x+\mu) (1+\gamma_\mu)U_\mu^\dagger(x) \psi(x) )
-\end{displaymath}
- -->
-
-<IMG
- WIDTH="578" HEIGHT="46" BORDER="0"
- SRC="milcv7_4.png"
- ALT="\begin{displaymath}S = \sum_x \bar \psi(x) \psi(x) - \kappa(
-\sum_\mu \bar \psi...
-..._\mu \bar \psi(x+\mu) (1+\gamma_\mu)U_\mu^\dagger(x) \psi(x) ) \end{displaymath}">
-</DIV>
-<BR CLEAR="ALL">
-<P></P>
+ \sum_\mu \bar \psi(x+\mu) (1+\gamma_\mu)U_\mu^\dagger(x) \psi(x) ) $$</p>
 Furthermore, the sign convention for 
- <SPAN CLASS="MATH"><IMG
- WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_5.png"
- ALT="$\gamma_2$"></SPAN> 
+<p> $\gamma_2$</p> 
 is minus the standard convention.  Thus the MILC spinor fields differ
 from the &ldquo;conventional&rdquo; ones by a gamma-5 multiplication
- <!-- MATH
- $\psi_{MILC}= \gamma_5 \psi_{usual}$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="134" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_6.png"
- ALT="$\psi_{MILC}= \gamma_5 \psi_{usual}$"></SPAN>.
+<p> $\psi_{MILC= \gamma_5 \psi_{usual$.</p>
 and a reflection in the x-z plane.
   MILC uses Weyl-basis (gamma-5 diagonal)
  Dirac matrices.
@@ -4388,13 +4329,7 @@ r0 &lt;float&gt;
 
 <p>A Gaussian profile source centered at the origin, specified by the
 integers x, y, z, t.  This source has the value
- <!-- MATH
- $\exp[-(r/r0)^2]$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="101" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_7.png"
- ALT="$\exp[-(r/r0)^2]$"></SPAN>
+<p> $\exp[-(r/r0)^2]$</p>
 where r is the Cartesian displacement from x, y, z an the fixed time
 slice t.  This is a non-gauge-covariant source, so it is common to use
 it only with Coulomb gauge fixing.
@@ -5087,18 +5022,9 @@ source_iters &lt;int = n&gt;
 
 <p>This operator applies a covariant Gaussian with the specified width
 and iterations. It is define by 
- <!-- MATH
- $[1 + r_0^2 D^2/n]^2$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="101" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_8.png"
- ALT="$[1 + r_0^2 D^2/n]^2$"></SPAN> 
+<p> $[1 + r_0^2 D^2/n]^2$</p> 
 The discrete covariant Laplacian 
- <SPAN CLASS="MATH"><IMG
- WIDTH="25" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
- SRC="milcv7_9.png"
- ALT="$D^2$"></SPAN> 
+<p> $D^2$</p> 
 is constructed from
 the original unfattened gauge field.
 </p>
@@ -5858,23 +5784,11 @@ specify the correct number of colors/sources in the file.
 </p>
 <p>The <strong>error_for_propagator</strong> specifies the desired upper bound
 for the Cartesian norm ratio
-<!-- MATH
- $|resid|/|source|$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="113" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_10.png"
- ALT="$\vert resid\vert/\vert source\vert$"></SPAN>
+<p>$|resid|/|source|$</p>
 where <strong>resid</strong> is the residual vector.  Note, this is not the
 squared upper bound.  The <strong>rel_error_for_propagator</strong> specifies
 the desired upper bound for the &ldquo;relative norm&rdquo;
-<!-- MATH
- $\sqrt{\sum_x|resid(x)|^2/|soln(x)|^2/V}$
- -->
-<SPAN CLASS="MATH"><IMG
- WIDTH="218" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
- SRC="milcv7_11.png"
- ALT="$\sqrt{\sum_x\vert resid(x)\vert^2/\vert soln(x)\vert^2/V}$"></SPAN>
+<p>$\sqrt{\sum_x|resid(x)|^2/|soln(x)|^2/V$</p>
 where <strong>|resid(x)|</strong> is the magnitude of the residual vector
 (magniude of the Dirac spinor or color vector) on a single site
 <strong>x</strong>, <strong>|soln(x)|</strong> is the magnitude of the solution vector
@@ -6028,7 +5942,7 @@ same function as above.
 <td valign="middle" align="left">[<a href="#Concept-Index" title="Index">Index</a>]</td>
 <td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
 </tr></table>
-<a name="Combine-description-2"></a>
+<a name="Combine-description-1"></a>
 <h3 class="subsection">7.1.9 Combine description</h3>
 <a name="index-Combine-description"></a>
 
@@ -6598,7 +6512,7 @@ here. See section <a href="#Quark-description">Quark description</a>.
 <td valign="middle" align="left">[<a href="#Concept-Index" title="Index">Index</a>]</td>
 <td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
 </tr></table>
-<a name="Combine-description-1"></a>
+<a name="Combine-description-2"></a>
 <h3 class="subsection">7.2.8 Combine description</h3>
 <a name="index-Combine-description-1"></a>
 
@@ -7395,7 +7309,7 @@ r_offset &lt;int[4]&gt;
       </ul></li>
       <li><a name="toc-Propagator-description-1" href="#Propagator-description">7.1.7 Propagator description</a></li>
       <li><a name="toc-Quark-description-1" href="#Quark-description">7.1.8 Quark description</a></li>
-      <li><a name="toc-Combine-description-2" href="#Combine-description">7.1.9 Combine description</a></li>
+      <li><a name="toc-Combine-description-1" href="#Combine-description">7.1.9 Combine description</a></li>
       <li><a name="toc-Hadron-description-1" href="#Hadron-description">7.1.10 Hadron description</a></li>
     </ul></li>
     <li><a name="toc-ks_005fspectrum-1" href="#ks_005fspectrum">7.2 ks_spectrum</a>
@@ -7407,7 +7321,7 @@ r_offset &lt;int[4]&gt;
       <li><a name="toc-KS-modified-sources-1" href="#KS-modified-sources">7.2.5 KS modified sources</a></li>
       <li><a name="toc-KS-propagator-set-description-1" href="#KS-propagator-set-description">7.2.6 KS propagator set description</a></li>
       <li><a name="toc-KS-quark-description-1" href="#KS-quark-description">7.2.7 KS quark description</a></li>
-      <li><a name="toc-Combine-description-1" href="#KS-combine-description">7.2.8 Combine description</a></li>
+      <li><a name="toc-Combine-description-2" href="#KS-combine-description">7.2.8 Combine description</a></li>
       <li><a name="toc-KS-meson-description-1" href="#KS-meson-description">7.2.9 KS meson description</a></li>
       <li><a name="toc-KS-baryon-description-1" href="#KS-baryon-description">7.2.10 KS baryon description</a></li>
     </ul>
@@ -7427,7 +7341,7 @@ r_offset &lt;int[4]&gt;
 </tr></table>
 <h1>About This Document</h1>
 <p>
-  This document was generated by <em>Carleton DeTar</em> on <em>November 22, 2015</em> using <a href="http://www.nongnu.org/texi2html/"><em>texi2html 1.82</em></a>.
+  This document was generated on <i>July 18, 2024</i> using <a href="http://www.nongnu.org/texi2html/"><i>texi2html 1.82</i></a>.
 </p>
 <p>
   The buttons in the navigation panels have the following meaning:
@@ -7529,7 +7443,7 @@ r_offset &lt;int[4]&gt;
 <hr size="1">
 <p>
  <font size="-1">
-  This document was generated by <em>Carleton DeTar</em> on <em>November 22, 2015</em> using <a href="http://www.nongnu.org/texi2html/"><em>texi2html 1.82</em></a>.
+  This document was generated on <i>July 18, 2024</i> using <a href="http://www.nongnu.org/texi2html/"><i>texi2html 1.82</i></a>.
  </font>
  <br>
 

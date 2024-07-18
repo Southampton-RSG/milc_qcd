@@ -130,7 +130,7 @@ void r_ascii_ks_eigen_f(ks_eigen_file *kseigf);
 void restore_eigVec(int Nvecs, double *eigVal, su3_vector **eigVec, int parity,
 		    imp_ferm_links_t *fn);
 ks_eigen_file *r_open_ks_eigen(int flag, char *filename);
-ks_eigen_file *w_open_ks_eigen(int flag, char *filename, int parity);
+static ks_eigen_file *w_open_ks_eigen(int flag, char *filename, int parity);
 
 void r_close_ks_eigen(int flag, ks_eigen_file *kseigf);
 void w_close_ks_eigen(int flag, ks_eigen_file *kseigf);
