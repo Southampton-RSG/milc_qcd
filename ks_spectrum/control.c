@@ -217,23 +217,23 @@ int main(int argc, char *argv[])
     
     if( param.fixflag == COULOMB_GAUGE_FIX)
       {
-	if(this_node == 0) 
-	  printf("Fixing to Coulomb gauge\n");
+        if(this_node == 0)
+          printf("Fixing to Coulomb gauge\n");
 
-	rephase( OFF );
-	STARTTIME;
-	gaugefix(TUP,(Real)1.8,500,GAUGE_FIX_TOL);
-	//gaugefix(TUP,(Real)1.5,500,GAUGE_FIX_TOL);
-	ENDTIME("gauge fix");
+        rephase( OFF );
+        STARTTIME;
+        gaugefix(TUP,(Real)1.8,500,GAUGE_FIX_TOL);
+        //gaugefix(TUP,(Real)1.5,500,GAUGE_FIX_TOL);
+        ENDTIME("gauge fix");
 
-	/* (Re)construct APE smeared links after gauge fixing.  
-	   No KS phases here! */
-	destroy_ape_links_4D(ape_links);
-	ape_links = ape_smear_4D( param.staple_weight, param.ape_iter );
-	if(param.time_bc == 0)apply_apbc( ape_links, param.coord_origin[3] );
+        /* (Re)construct APE smeared links after gauge fixing.
+           No KS phases here! */
+        destroy_ape_links_4D(ape_links);
+        ape_links = ape_smear_4D( param.staple_weight, param.ape_iter );
+        if(param.time_bc == 0)apply_apbc( ape_links, param.coord_origin[3] );
 
-	rephase( ON );
-	invalidate_fermion_links(fn_links);
+        rephase( ON );
+        invalidate_fermion_links(fn_links);
 
       }
     else
@@ -618,13 +618,13 @@ int main(int argc, char *argv[])
     /* Free any remaining quark prop memory */
     if(quark[oldiq0] != NULL)
       if(param.saveflag_q[oldiq0] != FORGET){
-	destroy_ksp_field(quark[oldiq0]); quark[oldiq0] = NULL;
-	node0_printf("destroy quark[%d]\n",oldiq0);
+        destroy_ksp_field(quark[oldiq0]); quark[oldiq0] = NULL;
+        node0_printf("destroy quark[%d]\n",oldiq0);
       }
     if(quark[oldiq1] != NULL)
       if(param.saveflag_q[oldiq1] != FORGET){
-	destroy_ksp_field(quark[oldiq1]); quark[oldiq1] = NULL;
-	node0_printf("destroy quark[%d]\n",oldiq1);
+        destroy_ksp_field(quark[oldiq1]); quark[oldiq1] = NULL;
+        node0_printf("destroy quark[%d]\n",oldiq1);
       }
 #endif
     ENDTIME("tie meson correlators");
